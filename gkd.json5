@@ -1,12 +1,8 @@
 {
-  id: 888,
+  id: 821421488,
   name: '黎雄克自用订阅',
   version: 1,  // 每次修改记得 +1
   author: '黎雄克',
-  categories: [
-    { key: 1, name: '开屏广告' },
-    { key: 2, name: '信息流广告' }
-  ],
   apps: [
     {
       id: 'com.coolapk.market',
