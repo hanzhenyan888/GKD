@@ -10,12 +10,9 @@
       "groups": [
         {
           "key": 1,
-          "name": "开屏广告",
-          "activityIds": ["com.coolapk.market.view.main.MainActivity"],
-          "rules": [
-            {
-              "matches": "@FrameLayout[vid='ad_container'] > FrameLayout > FrameLayout > TextView",
-              "action": "clickNode"
+          "name": "酷安跳过按钮测试",
+          "matches": "TextView[text*='跳过'][clickable=true]",
+          "action": "clickNode"
             }
           ]
         }
