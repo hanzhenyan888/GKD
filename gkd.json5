@@ -1,8 +1,8 @@
 {
   id: 20260509,
-  name: '佛山自用订阅',
+  name: '黎雄克自用订阅',
   version: 2,  // 每次修改记得 +1
-  author: '你的名字',
+  author: '黎雄克',
   categories: [
     { key: 1, name: '开屏广告' },
     { key: 2, name: '信息流广告' }
