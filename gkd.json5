@@ -1,43 +1,21 @@
 {
-  id: 821421488,
-  name: '黎雄克自用订阅',
-  version: 1,  // 每次修改记得 +1
-  author: '黎雄克',
-  apps: [
+  "id": 888,
+  "name": "黎雄克自用订阅",
+  "version": 1,
+  "author": "黎雄克",
+  "apps": [
     {
-      id: 'com.coolapk.market',
-      name: '酷安',
-      groups: [
+      "id": "com.coolapk.market",
+      "name": "酷安",
+      "groups": [
         {
-          key: 1,
+          "key": 1,
           "name": "开屏广告",
           "activityIds": ["com.coolapk.market.view.main.MainActivity"],
           "rules": [
             {
               "matches": "@FrameLayout[vid='ad_container'] > FrameLayout > FrameLayout > TextView",
               "action": "clickNode"
-            },
-            {
-              "matches": "@FrameLayout[vid='ad_container'] TextView[clickable=true][text*='跳过' || text*='关闭']",
-              "action": "clickNode"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      id: 'com.ss.android.ugc.aweme', // 抖音，用来测试
-      name: '抖音',
-      groups: [
-        {
-          key: 1,
-          name: '开屏广告-跳过',
-          category: 1,
-          rules: [
-            {
-              matches: '[text*="跳过"][clickable=true]',
-              action: 'click',
-              delay: 1500 // 延迟1.5秒点，防止误触
             }
           ]
         }
