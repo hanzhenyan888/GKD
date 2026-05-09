@@ -1,7 +1,7 @@
 {
   id: 888,
   name: '黎雄克自用订阅',
-  version: 2,  // 每次修改记得 +1
+  version: 3,  // 每次修改记得 +1
   author: '黎雄克',
   categories: [
     { key: 1, name: '开屏广告' },
@@ -9,12 +9,12 @@
   ],
   apps: [
     {
-      id: 'com.coolapk.market',
+      key:1,
       name: '酷安',
       groups: [
         {
           "key": 1,
-          "name": "酷安广告跳过",
+          "name": "开屏广告",
           "activityIds": ["com.coolapk.market.view.main.MainActivity"],
           "rules": [
             {
