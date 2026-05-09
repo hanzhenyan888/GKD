@@ -13,7 +13,7 @@
       name: '酷安',
       groups: [
         {
-          "key": "coolapk_ad_skip",
+          "key": 1,
           "name": "酷安广告跳过",
           "activityIds": ["com.coolapk.market.view.main.MainActivity"],
           "rules": [
