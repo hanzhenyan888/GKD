@@ -8,26 +8,27 @@
     { key: 2, name: '信息流广告' }
   ],
   apps: [
-    // 1. 酷安信息流广告规则（你原来的）
     {
       id: 'com.coolapk.market',
       name: '酷安',
       groups: [
         {
-          key: 1,
-          name: '信息流广告（ad_container）',
-          category: 2,
-          activityIds: 'com.coolapk.market.view.main.MainActivity',
-          rules: [
+          "key": "coolapk_ad_skip",
+          "name": "酷安广告跳过",
+          "activityIds": ["com.coolapk.market.view.main.MainActivity"],
+          "rules": [
             {
-              matches: '@TextView <3 FrameLayout < FrameLayout < [vid="ad_container"]',
-              action: 'click'
+              "matches": "@FrameLayout[vid='ad_container'] > FrameLayout > FrameLayout > TextView",
+              "action": "clickNode"
+            },
+            {
+              "matches": "@FrameLayout[vid='ad_container'] TextView[clickable=true][text*='跳过' || text*='关闭']",
+              "action": "clickNode"
             }
           ]
         }
       ]
     },
-    // 2. 新增：通用开屏广告规则（用于测试GKD是否工作）
     {
       id: 'com.ss.android.ugc.aweme', // 抖音，用来测试
       name: '抖音',
